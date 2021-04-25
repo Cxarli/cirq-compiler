@@ -1,0 +1,20 @@
+# a = dec10 - oct10 = 2
+mov rega d10
+sub rega o10
+
+mov regd habcdef
+
+# b = a^2 = 2^2 = 4
+mov regb rega
+sq regb
+
+# c = a + b = 2 + 4 = 6
+mov regc rega
+add regc regb
+
+# d = a*c + b = 2*6 + 4 = 16
+mov regd rega
+mul regd regc
+add regd regb
+
+debug regd
